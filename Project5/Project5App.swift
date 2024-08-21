@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct Project5App: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ModificationsVC()
         }
     }
 }

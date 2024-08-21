@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3452ADE82C7497B40013DD94 /* ThemePreferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3452ADE72C7497B40013DD94 /* ThemePreferenceView.swift */; };
 		3481146A2C69D468000C9860 /* Project5App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348114692C69D468000C9860 /* Project5App.swift */; };
 		3481146C2C69D468000C9860 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3481146B2C69D468000C9860 /* ContentView.swift */; };
 		3481146E2C69D469000C9860 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3481146D2C69D469000C9860 /* Assets.xcassets */; };
@@ -14,6 +15,8 @@
 		3481147B2C69D46A000C9860 /* Project5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3481147A2C69D46A000C9860 /* Project5Tests.swift */; };
 		348114852C69D46A000C9860 /* Project5UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348114842C69D46A000C9860 /* Project5UITests.swift */; };
 		348114872C69D46A000C9860 /* Project5UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348114862C69D46A000C9860 /* Project5UITestsLaunchTests.swift */; };
+		348114952C6A0AE4000C9860 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348114942C6A0AE4000C9860 /* AppDelegate.swift */; };
+		348114972C6A132B000C9860 /* ModificationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348114962C6A132B000C9860 /* ModificationsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,16 +37,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3452ADE72C7497B40013DD94 /* ThemePreferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePreferenceView.swift; sourceTree = "<group>"; };
 		348114662C69D468000C9860 /* Project5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		348114692C69D468000C9860 /* Project5App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project5App.swift; sourceTree = "<group>"; };
 		3481146B2C69D468000C9860 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		3481146D2C69D469000C9860 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3481146D2C69D469000C9860 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Project5/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		348114702C69D469000C9860 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		348114762C69D46A000C9860 /* Project5Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Project5Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3481147A2C69D46A000C9860 /* Project5Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project5Tests.swift; sourceTree = "<group>"; };
 		348114802C69D46A000C9860 /* Project5UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Project5UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		348114842C69D46A000C9860 /* Project5UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project5UITests.swift; sourceTree = "<group>"; };
 		348114862C69D46A000C9860 /* Project5UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project5UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		348114932C69DA2A000C9860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		348114942C6A0AE4000C9860 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		348114962C6A132B000C9860 /* ModificationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModificationsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +101,13 @@
 		348114682C69D468000C9860 /* Project5 */ = {
 			isa = PBXGroup;
 			children = (
+				348114942C6A0AE4000C9860 /* AppDelegate.swift */,
 				348114692C69D468000C9860 /* Project5App.swift */,
+				348114962C6A132B000C9860 /* ModificationsVC.swift */,
+				3452ADE72C7497B40013DD94 /* ThemePreferenceView.swift */,
 				3481146B2C69D468000C9860 /* ContentView.swift */,
 				3481146D2C69D469000C9860 /* Assets.xcassets */,
+				348114932C69DA2A000C9860 /* Info.plist */,
 				3481146F2C69D469000C9860 /* Preview Content */,
 			);
 			path = Project5;
@@ -257,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				348114952C6A0AE4000C9860 /* AppDelegate.swift in Sources */,
 				3481146C2C69D468000C9860 /* ContentView.swift in Sources */,
+				348114972C6A132B000C9860 /* ModificationsVC.swift in Sources */,
 				3481146A2C69D468000C9860 /* Project5App.swift in Sources */,
+				3452ADE82C7497B40013DD94 /* ThemePreferenceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,14 +431,17 @@
 		3481148B2C69D46A000C9860 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon_3 AppIcon_2 AppIcon_1 AppIcon";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Project5/Preview Content\"";
 				DEVELOPMENT_TEAM = W8N9JG97SK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Project5/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -446,14 +463,17 @@
 		3481148C2C69D46A000C9860 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon_3 AppIcon_2 AppIcon_1 AppIcon";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Project5/Preview Content\"";
 				DEVELOPMENT_TEAM = W8N9JG97SK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Project5/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
