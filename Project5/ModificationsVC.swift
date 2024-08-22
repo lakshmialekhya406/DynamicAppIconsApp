@@ -24,13 +24,13 @@ struct ModificationsVC: View {
                     switch modification {
                     case .appIcon:
                         NavigationLink(destination: ContentView(isDarkMode: $isDarkMode)) {
-                            Text("\(modification.title)")
+                            Text("\(modification.rawValue)")
                         }
                         .listRowBackground(Color(uiColor: UIColor(named: "PrimaryBackgroud")!.withAlphaComponent(0.3))) // Cell background color
                         
                     case .customizations:
                         NavigationLink(destination:ThemePreferenceView(isDarkMode: $isDarkMode)) {
-                            Text("\(modification.title)")
+                            Text("\(modification.rawValue)")
                         }
                         .listRowBackground(Color(uiColor: UIColor(named: "PrimaryBackgroud")!.withAlphaComponent(0.3))) // Cell background color
                         
@@ -75,16 +75,7 @@ struct ModificationsVC: View {
     ModificationsVC()
 }
 
-enum Modification {
-    case appIcon
-    case customizations
-    
-    var title: String {
-        switch self {
-        case .appIcon:
-            return "App Icon"
-        case .customizations:
-            return "Theme"
-        }
-    }
+enum Modification: String {
+    case appIcon = "App Icon"
+    case customizations = "Theme"
 }

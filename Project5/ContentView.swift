@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @Binding var isDarkMode: Bool
+    let images:[String] = ["AppIcon", "AppIcon_1", "AppIcon_2", "AppIcon_3"]
     
     var body: some View {
         ZStack {
@@ -18,34 +19,15 @@ struct ContentView: View {
             VStack {
                 Text("Change your app icon")
                 HStack(spacing: 10){
-                    Image(uiImage: UIImage(named: "AppIcon")!)
-                        .resizable()
-                        .frame(width: 70, height: 70)
-                        .onTapGesture {
-                            changeAppIcon(to: nil) // To revert to the default icon
-                        }
-                        .border(.black, width: 1)
-                    Image(uiImage: UIImage(named: "AppIcon_1")!)
-                        .resizable()
-                        .frame(width: 70, height: 70)
-                        .onTapGesture {
-                            changeAppIcon(to: "AppIcon_1") // this is the same value of the image asset catalog
-                        }
-                        .border(.black, width: 1)
-                    Image(uiImage: UIImage(named: "AppIcon_2")!)
-                        .resizable()
-                        .frame(width: 70, height: 70)
-                        .onTapGesture {
-                            changeAppIcon(to: "AppIcon_2") // this is the same value of the image asset catalog
-                        }
-                        .border(.black, width: 1)
-                    Image(uiImage: UIImage(named: "AppIcon_3")!)
-                        .resizable()
-                        .frame(width: 70, height: 70)
-                        .onTapGesture {
-                            changeAppIcon(to: "AppIcon_3") // this is the same value of the image asset catalog
-                        }
-                        .border(.black, width: 1)
+                    ForEach(images, id: \.self) { image in
+                        Image(uiImage: UIImage(named: image)!)
+                            .resizable()
+                            .frame(width: 70, height: 70)
+                            .onTapGesture {
+                                changeAppIcon(to: image == "AppIcon" ? nil : image)
+                            }
+                            .border(.black, width: 1)
+                    }
                 }
             }
             .padding()
